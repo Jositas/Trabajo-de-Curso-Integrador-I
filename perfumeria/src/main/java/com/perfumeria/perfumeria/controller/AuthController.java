@@ -16,6 +16,11 @@ public class AuthController {
     @Autowired
     private UsuarioService usuarioService;
 
+    @GetMapping("/") // Asegúrate de que esta ruta exista si es tu página de inicio principal
+    public String mostrarIndex() {
+        return "index";
+    }
+
     @GetMapping("/login")
     public String mostrarLogin() {
         return "login";
@@ -57,5 +62,10 @@ public class AuthController {
     @GetMapping("/admin/dashboard")
     public String dashboardAdmin() {
         return "admin/dashboard";
+    }
+
+    @GetMapping("/productos")
+    public String mostrarProductos() {
+        return "productos";
     }
 }
