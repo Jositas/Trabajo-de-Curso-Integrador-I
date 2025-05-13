@@ -1,10 +1,10 @@
-package com.perfumeria.perfumeria;
+package com.example.Reyna;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PerfumeriaApplicationTests {
+class ReynaApplicationTests {
 
 	@Test
 	void contextLoads() {
